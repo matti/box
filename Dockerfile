@@ -10,5 +10,6 @@ RUN mkdir /ghjk && cd /ghjk \
   && mv ttyd.x86_64 /usr/local/bin/ttyd \
   && rm -rf /ghjk
 
+LABEL org.opencontainers.image.source = "https://github.com/matti/box"
 COPY entrypoint.sh .
 ENTRYPOINT ["/entrypoint.sh"]
